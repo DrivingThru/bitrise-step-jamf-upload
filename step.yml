@@ -10,7 +10,7 @@ support_url: https://github.com/DrivingThru/bitrise-step-jamf-upload/issues
 published_at: 2022-07-01T19:01:57.318895784+02:00
 source:
   git: https://github.com/DrivingThru/bitrise-step-jamf-upload.git
-  commit: 932e393f9b0455f676839c7185c1d8740133beec
+  commit: 0bec1d9e2e81a58bdd45cb0dda0f15f0c852585e
 host_os_tags:
   - osx-10.10
 project_type_tags:
