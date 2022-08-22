@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if [ -z "$jamf_username" ]; then
   echo "Please provide your Jamf Username"
   exit 1
@@ -22,5 +20,5 @@ set -e
 set -x
 set -o pipefail
 
-curl -k -u "$jamf_username:$jamf_password" -X POST https://$jamf_server_name.jamfcloud.com/JSSResource/fileuploads/mobiledeviceapplicationsipa/id/$jamf_app_id?FORCE_IPA_UPLOAD=true -F "file=@$upload_path"
+curl -k -u "$jamf_username:$jamf_password" -X POST https://$jamf_server_name.jamfcloud.com/JSSResource/fileuploads/mobiledeviceapplicationsipa/id/$jamf_app_id -F "file=@$upload_path"
 
